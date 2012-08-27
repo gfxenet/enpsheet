@@ -5,30 +5,28 @@
 /* (1) ---------- RESET CSS  based on e.mayer ----------- */
 
 
-*{margin:0;padding:0;}
+*{margin:0;}
 html,body{height:100%;}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-weight:inherit;vertical-align:baseline;margin:0;padding:0;}
-button, input, select, textarea {margin:0; padding:0;}
-body{line-height:1;}
+body{line-height:1.5;}
 table{border-spacing:0;border-collapse:collapse;}
 caption,th,td{font-weight:400;text-align:left;}
 table,td,th{vertical-align:middle;}
-del { text-decoration: line-through;}
-b, strong {font-weight: bold;}
-blockquote, q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
 
 
 /* (2) ---------- link ----------- */
 
-a {cursor:pointer;font-weight:normal;text-decoration:none;}
-a b {font-weight:bold;}
+a {cursor:pointer;font-weight:700;text-decoration:none;}
+a b {font-weight:bold}
 a:hover {text-decoration:underline}
 a img {border:none;}
-a:hover, a:active, a:visited { outline: none; -moz-outline: none;}
+a:hover, a:active { outline: none; }
 
 /* (3) ---------- list ----------- */
 
-ul, ol {list-style:none;}
+ul{list-style:none;}
 
 /* (4) ---------- forms ----------- */
 
@@ -38,26 +36,16 @@ input[type="checkbox"] { vertical-align: bottom; }
 .ie6 input { vertical-align: text-bottom; }
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
 input:focus {outline:none;}
-input{font-family:Arial,sans-serif;}
+input{font-family:arial;}
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
 button {  width: auto; overflow: visible; }
 button, input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"] {padding:1px;}
-textarea {resize:none; overflow: auto;}
-input, select { vertical-align: middle; }
 
 /* (5) ---------- extras ----------- */
 
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 blockquote p:before, blockquote p:after, q:before, q:after {content: '';}
 img {vertical-align: bottom;}
-
-.ie7 img { -ms-interpolation-mode: bicubic; } /*IE better img render*/
-
-/*select bg & font color*/
-::-moz-selection{ background: #cb0202; color:#fff; text-shadow: none; } 
-::selection { background:#cb0202; color:#fff; text-shadow: none; } 
-a:link { -webkit-tap-highlight-color: #cb0202;} 
-
-input::-moz-focus-inner { border: 0; padding: 0; } /*Remove button padding in FF*/
 
 /* (6) ---------- HTML5 adds  ----------- */
 
@@ -78,9 +66,6 @@ body div {position:relative;text-align:left;}
 
 .floatRight{display:block;float:right !important;}
 .floatLeft{display:block;float:left !important;}
-.floatNone{display:block;float: none !important;}
-.ie6 .floatRight, .ie7 .floatRight {display: inline;} /*IE6-7 float bug*/
-.ie6 .floatLeft, .ie7 .floatLeft {display: inline;} /*IE6-7 float bug*/
 
 /*font-colors*/
 
@@ -91,15 +76,15 @@ body div {position:relative;text-align:left;}
 /*clearfix*/
 
 .clearfix{clear:both;overflow:hidden;}
-.clearfix2:before, .clearfix2:after {content:""; display:table; height: 0;}
-.clearfix2:after {clear:both;}
-.clearfix2 {*zoom:1;} /* For IE 6/7 (trigger hasLayout) */
+.clearfix2:after{height:0;clear:both;content:".";display:block;line-height:0;visibility:hidden;}
+.clearfix2{display:inline-block;}
+html[xmlns] .clearfix2{display:block;}
+* html .clearfix2{height:1%;}
 
 /*positioning*/
 
 .absolute{position:absolute;}
-.relative{position:relative;}
-.static{position:static;}
+
 
 /*visibility*/
 
@@ -114,17 +99,6 @@ body div {position:relative;text-align:left;}
 .al_left {text-align: left !important;}
 .al_right {text-align: right !important;}
 .weak {font-weight:500 !important;}
-
-.font9, .f9 {font-size: 9px; line-height: 12px;}
-.font10, .f10 {font-size: 10px; line-height: 13px;}
-.font11, .f11 {font-size: 11px; line-height: 14px;}
-.font12, .f12 {font-size: 12px; line-height: 15px;}
-.font13, .f13 {font-size: 13px; line-height: 16px;}
-.font14, .f14 {font-size: 14px; line-height: 17px;}
-.font16, .f16 {font-size: 16px; line-height: 19px;}
-.font18, .f18 {font-size: 18px; line-height: 21px;}
-.font20, .f20 {font-size: 20px; line-height: 23px;}
-
 
 /*borders*/
 
@@ -384,6 +358,12 @@ body div {position:relative;text-align:left;}
 .w700 {width: 700px}
 .w750 {width: 750px}
 .w800 {width: 800px}
+
+
+.f11 {font-size: 11px !important}
+.f12 {font-size: 12px !important}
+.f13 {font-size: 13px !important}
+.f14 {font-size: 14px !important}
 
 
 
