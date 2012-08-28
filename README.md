@@ -8,6 +8,7 @@ FONTS
 Font face generator:
  http://www.fontsquirrel.com/fontface/generator
  http://fontface.codeandmore.com/
+ http://onlinefontconverter.com/myfonts.php
 
 Base64 encode:
  http://www.opinionatedgeek.com/dotnet/tools/base64encode/
