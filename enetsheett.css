@@ -58,6 +58,8 @@ a:link { -webkit-tap-highlight-color: #cb0202;}
 
 input::-moz-focus-inner { border: 0; padding: 0; } /*Remove button padding in FF*/
 
+body, div, p, span, a {-webkit-font-smoothing: antialiased;} /*normal font smoothing on safari (Mac)*/
+
 /* (6) ---------- HTML5 adds  ----------- */
 
 section, nav, header, footer, aside, hgroup, article {position:relative;display:block}
