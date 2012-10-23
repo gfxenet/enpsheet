@@ -37,7 +37,15 @@ EMULATORS
 ========================================================
  Opera Mobile 	http://www.opera.com/developer/tools/mobile/
  Windows Phone 	http://www.microsoft.com/download/en/details.aspx?id=13890
- Android 		http://developer.android.com/guide/developing/tools/emulator.html
+ Android 	http://www.manymo.com, http://developer.android.com/guide/developing/tools/emulator.html
 
+
+========================================================
+INNE
+========================================================
+
+image placeholder: http://cambelt.co, http://placehold.it
+js compress: http://closure-compiler.appspot.com/home
+css compress: http://www.csscompressor.com/
 
 
